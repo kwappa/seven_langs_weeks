@@ -4,7 +4,7 @@ class Tree
 
   def initialize(value)
     value = value.to_a.first if value.instance_of? Hash
-    (name, children) = value.to_a
+    (name, children) = value
     @node_name = name
     @children  = children.inject([]) { |r, c| r << Tree.new(c) ; r } if children
   end
