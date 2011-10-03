@@ -9,6 +9,13 @@ family_tree = Tree.new( 'granpa' => {
                             'child 3' => [],
                             'child 4' => [],
                           },
+                          'aunt' => {
+                            'child 4' => {
+                              'grand child 1' => [],
+                              'grand child 2' => [],
+                            },
+                            'child 5' => [],
+                          },
                         }
                        )
 
