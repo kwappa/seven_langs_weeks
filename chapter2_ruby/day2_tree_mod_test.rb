@@ -20,4 +20,4 @@ family_tree = Tree.new( 'granpa' => {
                        )
 
 family_tree.visit { |c| puts c.node_name }
-family_tree.visit_all { |c| puts c.node_name + "/#{c.children.count}" }
+family_tree.visit_all { |c| puts c.node_name }
